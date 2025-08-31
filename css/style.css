@@ -22,7 +22,6 @@ header {
   padding: 15px 50px;
   background-color: #3a3a3a;
   border-bottom: 1px solid #555;
-  position: relative;
   flex-wrap: wrap;
 }
 
@@ -36,6 +35,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -257,15 +257,23 @@ footer {
   header {
     padding: 10px 15px;
   }
+  nav ul {
+    gap: 10px;
+  }
   .mainvisual {
     padding: 30px 10px;
   }
   .intro h2, .intro-right h2, .features h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    word-break: break-word;
   }
   .intro p, .intro-right p, .feature-text p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-break: break-word;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .feature-box {
     padding: 20px;
@@ -274,13 +282,23 @@ footer {
 
 @media (max-width: 480px) {
   .logo img {
-    height: 50px;
+    height: 45px;
   }
   nav ul {
-    gap: 8px;
+    gap: 6px;
   }
   .intro, .intro-right, .features {
-    padding: 30px 5%;
+    padding: 20px 5%;
+  }
+  .intro h2, .intro-right h2, .features h2 {
+    font-size: 1.2rem;
+  }
+  .intro p, .intro-right p, .feature-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .feature-box {
+    padding: 15px;
   }
   .feature-box img {
     width: 100%;
