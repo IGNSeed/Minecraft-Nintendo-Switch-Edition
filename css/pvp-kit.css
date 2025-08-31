@@ -87,15 +87,17 @@ nav ul li a:hover {
   color: #ffdd59;
 }
 
+/*=====kit-items=====*/
 .kit-items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* アイテム数に応じて列数調整 */
+  gap: 10px;
+  justify-content: center; /* 行全体を中央寄せ */
+  justify-items: center;   /* 各アイテムの中央寄せ */
 }
 
 .kit-items .item {
-  position: relative;
+  position: relative; /* ツールチップ用 */
   display: inline-block;
 }
 
@@ -108,44 +110,48 @@ nav ul li a:hover {
   padding: 5px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.kit-items .item img:hover {
+  transform: scale(1.1);
 }
 
 /*=====ツールチップ=====*/
 .kit-items .item .tooltip {
   position: absolute;
-  bottom: 120%; /* ボックスの上 */
+  bottom: 120%;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
-  background-color: rgba(80, 80, 80, 0.95); /* グレー */
-  color: #ffffff; /* 文字白 */
+  background-color: rgba(80, 80, 80, 0.95);
+  color: #ffffff;
   padding: 8px 12px;
-  border-radius: 10px; /* 角丸 */
+  border-radius: 10px;
   white-space: nowrap;
   font-size: 0.9rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* 影 */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   z-index: 10;
 }
 
-/* ホバー・タップで表示 */
 .kit-items .item:hover .tooltip,
 .kit-items .item.show-tooltip .tooltip {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
 
-/* 小さい三角形の矢印 */
+/* 三角矢印 */
 .kit-items .item .tooltip::after {
   content: '';
   position: absolute;
-  top: 100%; /* ボックスの下 */
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   border-width: 6px;
   border-style: solid;
-  border-color: rgba(80, 80, 80, 0.95) transparent transparent transparent; /* グレー矢印 */
+  border-color: rgba(80, 80, 80, 0.95) transparent transparent transparent;
 }
 
 /*=====footer=====*/
@@ -195,6 +201,16 @@ footer {
 }
 
 /*=====レスポンシブ=====*/
+@media (max-width: 1024px) {
+  .kit-items {
+    grid-template-columns: repeat(3, 1fr); /* ノートPC・タブレット：3列 */
+  }
+  .kit-items .item img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -223,8 +239,7 @@ footer {
     font-size: 1.4rem;
   }
   .kit-items .item img {
-    width: 50px;
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -241,8 +256,11 @@ footer {
   .kit-box h3 {
     font-size: 1.2rem;
   }
+  .kit-items {
+    grid-template-columns: repeat(2, 1fr); /* スマホ：2列 */
+  }
   .kit-items .item img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }
