@@ -257,7 +257,7 @@ footer {
     font-size: 1.2rem;
   }
   .kit-items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .kit-items .item img {
     width: 50px;
