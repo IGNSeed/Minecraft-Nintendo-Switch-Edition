@@ -219,3 +219,65 @@ footer {
   color: #aaaaaa;
   margin-top: 10px;
 }
+
+/*=====レスポンシブ対応=====*/
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .intro, .intro-right, .features {
+    padding: 40px 5%;
+  }
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-box img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .feature-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+  .mainvisual {
+    padding: 30px 10px;
+  }
+  .intro h2, .intro-right h2, .features h2 {
+    font-size: 1.6rem;
+  }
+  .intro p, .intro-right p, .feature-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .feature-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 50px;
+  }
+  nav ul {
+    gap: 8px;
+  }
+  .intro, .intro-right, .features {
+    padding: 30px 5%;
+  }
+  .feature-box img {
+    width: 100%;
+  }
+}
