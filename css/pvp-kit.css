@@ -90,14 +90,14 @@ nav ul li a:hover {
 /*=====kit-items=====*/
 .kit-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* アイテム数に応じて列数調整 */
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   gap: 10px;
-  justify-content: center; /* 行全体を中央寄せ */
-  justify-items: center;   /* 各アイテムの中央寄せ */
+  justify-content: center;
+  justify-items: center;
 }
 
 .kit-items .item {
-  position: relative; /* ツールチップ用 */
+  position: relative;
   display: inline-block;
 }
 
@@ -203,7 +203,7 @@ footer {
 /*=====レスポンシブ=====*/
 @media (max-width: 1024px) {
   .kit-items {
-    grid-template-columns: repeat(3, 1fr); /* ノートPC・タブレット：3列 */
+    grid-template-columns: repeat(3, 1fr);
   }
   .kit-items .item img {
     width: 80px;
@@ -257,7 +257,7 @@ footer {
     font-size: 1.2rem;
   }
   .kit-items {
-    grid-template-columns: repeat(2, 1fr); /* スマホ：2列 */
+    grid-template-columns: repeat(3, 1fr);
   }
   .kit-items .item img {
     width: 50px;
