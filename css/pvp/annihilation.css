@@ -379,6 +379,7 @@ footer {
   header {
     padding: 10px 15px;
   }
+
   nav ul {
     gap: 10px;
   }
@@ -386,18 +387,21 @@ footer {
   .map-card {
     flex-direction: column-reverse;
     text-align: center;
+    padding: 20px;         /* ボックス内の余白を広めに */
+    margin-bottom: 30px;   /* ボックス同士の間隔 */
+    border-radius: 12px;   /* 角丸を大きめにして余裕感 */
   }
 
   .map-image img {
     width: 100%;
     max-width: 400px;
     display: block;
-    margin: 10px;  /* ← 画像の上下に余白をつける */
+    margin: 15px auto;     /* 画像の上下に余白 + 中央寄せ */
     border-radius: 10px;
   }
 
   .map-info {
-    padding: 10px;
+    padding: 10px;         /* テキストの余白も増やす */
   }
 }
 
