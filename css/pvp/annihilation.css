@@ -388,12 +388,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .map-card,
-  .map-card.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .map-image img {
     width: 100%;
     max-width: 400px;
