@@ -394,14 +394,6 @@ footer {
     padding: 10px;              /* ← 画像の周囲に余白 */
   }
 
-  .map-image img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
   .map-info {
     padding: 10px;
   }
