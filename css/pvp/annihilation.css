@@ -403,6 +403,22 @@ footer {
   .map-info {
     padding: 10px;         /* テキストの余白も増やす */
   }
+
+    .page-title {
+    padding: 30px 5%;
+  }
+  .page-title h2 {
+    font-size: 1.5rem;
+  }
+  .kits {
+    padding: 20px 5%;
+  }
+  .kit-box h3 {
+    font-size: 1.4rem;
+  }
+  .kit-items .item img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -421,24 +437,6 @@ footer {
   .kit-items .item img {
     width: 80px;
     height: 80px;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-title {
-    padding: 30px 5%;
-  }
-  .page-title h2 {
-    font-size: 1.5rem;
-  }
-  .kits {
-    padding: 20px 5%;
-  }
-  .kit-box h3 {
-    font-size: 1.4rem;
-  }
-  .kit-items .item img {
-    height: 60px;
   }
 }
 
