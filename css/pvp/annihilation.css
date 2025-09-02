@@ -376,6 +376,22 @@ footer {
   nav ul {
     gap: 10px;
   }
+
+  /* マップカード縦並び（説明→画像） */
+  .map-card {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .map-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+  }
+
+  .map-info {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -384,18 +400,6 @@ footer {
   }
   nav ul {
     gap: 6px;
-  }
-}
-
-@media (max-width: 768px) {
-  .map-image img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .map-info {
-    padding: 15px;
   }
 }
 
