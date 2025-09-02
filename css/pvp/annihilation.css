@@ -386,8 +386,6 @@ footer {
   .map-card {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 15px;              /* ← 枠と中身の間に余白を確保 */
-    margin-bottom: 20px;        /* ← 各カードの間に余白 */
   }
 
   .map-image img {
