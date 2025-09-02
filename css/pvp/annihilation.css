@@ -206,11 +206,6 @@ main {
   color: #eaeaea;
 }
 
-/* 右画像・左説明 */
-.map-card.reverse {
-  flex-direction: row-reverse;
-}
-
 /*=====page-title=====*/
 .page-title {
   padding: 60px 10%;
