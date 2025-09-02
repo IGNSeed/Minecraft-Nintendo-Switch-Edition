@@ -390,8 +390,12 @@ footer {
     margin-bottom: 20px;        /* ← 各カードの間に余白 */
   }
 
-  .map-image {
-    padding: 10px;              /* ← 画像の周囲に余白 */
+  .map-image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto 0 auto;  /* ← 画像の上下に余白をつける */
+    border-radius: 10px;
   }
 
   .map-info {
