@@ -100,10 +100,6 @@ nav ul li a:hover {
   transition: transform 0.2s;
 }
 
-.player:hover {
-  transform: translateX(5px);
-}
-
 .player img {
   width: 60px;
   height: 60px;
@@ -116,24 +112,18 @@ nav ul li a:hover {
   font-size: 1.1rem;
   font-weight: 500;
   color: #e0e0e0;
-  flex-grow: 1; /* 名前の部分を広げる */
+  flex-grow: 1;
 }
 
-/* YouTubeアイコン複数対応 */
 .yt-links {
   display: flex;
-  gap: 10px; /* アイコン間の間隔 */
+  gap: 10px;
 }
 
 .yt-link {
   color: #ff4747;
   font-size: 1.5rem;
   transition: transform 0.2s, color 0.2s;
-}
-
-.yt-link:hover {
-  color: #ff6b6b;
-  transform: scale(1.2);
 }
 
 /* Tierごとの色分け */
