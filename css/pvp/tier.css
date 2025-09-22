@@ -51,6 +51,100 @@ nav ul li a:hover {
   color: #ffdd59;
 }
 
+/*=====main=====*/
+
+.tier-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffdd59;
+}
+
+/* 各Tierボックス */
+.tier-box {
+  margin: 25px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 12px;
+  background-color: #3a3a3a;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.tier-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* プレイヤー表示 */
+.player {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.player:hover {
+  transform: translateX(5px);
+}
+
+.player img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #fff;
+}
+
+.player span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  flex-grow: 1; /* 名前の部分を広げる */
+}
+
+/* YouTubeアイコン複数対応 */
+.yt-links {
+  display: flex;
+  gap: 10px; /* アイコン間の間隔 */
+}
+
+.yt-link {
+  color: #ff4747;
+  font-size: 1.5rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.yt-link:hover {
+  color: #ff6b6b;
+  transform: scale(1.2);
+}
+
+/* Tierごとの色分け */
+.s-rank h2 { color: #ff4747; }
+.a-rank h2 { color: #ffdd59; }
+.b-rank h2 { color: #59ff8e; }
+.c-rank h2 { color: #59aaff; }
+.d-rank h2 { color: #bd59ff; }
+.e-rank h2 { color: #ff9f59; }
+.f-rank h2 { color: #999999; }
+
 /*=====footer=====*/
 footer {
   background-color: #1f1f1f;
@@ -128,5 +222,15 @@ footer {
   }
   nav ul {
     gap: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .player img {
+    width: 40px;
+    height: 40px;
+  }
+  .player span {
+    font-size: 1rem;
   }
 }
