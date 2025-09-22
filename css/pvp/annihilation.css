@@ -246,6 +246,17 @@ main {
   color: #ffdd59;
 }
 
+.kit-box h4 {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #ffd369;
+}
+
+.kit-box p {
+  font-size: 15px;
+}
+
 /*=====kit-items=====*/
 .kit-items {
   display: grid;
@@ -387,21 +398,21 @@ footer {
   .map-card {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 10px;         /* ボックス内の余白を広めに */
-    margin-bottom: 30px;   /* ボックス同士の間隔 */
-    border-radius: 10px;   /* 角丸を大きめにして余裕感 */
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
   }
 
   .map-image img {
     width: 100%;
     max-width: 400px;
     display: block;
-    margin: 10px auto;     /* 画像の上下に余白 + 中央寄せ */
+    margin: 10px auto;
     border-radius: 10px;
   }
 
   .map-info {
-    padding: 10px;         /* テキストの余白も増やす */
+    padding: 10px;
   }
 
     .page-title {
