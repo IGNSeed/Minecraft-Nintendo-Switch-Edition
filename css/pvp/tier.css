@@ -123,7 +123,6 @@ nav ul li a:hover {
 .yt-link {
   color: #ff4747;
   font-size: 1.5rem;
-  transition: transform 0.2s, color 0.2s;
 }
 
 /* Tierごとの色分け */
